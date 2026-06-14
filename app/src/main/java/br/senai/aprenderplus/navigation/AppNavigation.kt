@@ -30,13 +30,25 @@ fun AppNavigation(){
             )
         }
         composable("QuizMyBrain"){
-            QuizMyBrain()
+            QuizMyBrain(
+                onBackArrow = {
+                    navController.navigate("home")
+                }
+            )
         }
         composable("GeniusPlay"){
-            GeniusPlay()
+            GeniusPlay(
+                onBackArrow = {
+                    navController.navigate("home")
+                }
+            )
         }
         composable("MemoCheck"){
-            MemoCheck()
+            MemoCheck(
+                onBackArrow = {
+                    navController.navigate("home")
+                }
+            )
         }
     }
 }
